@@ -118,9 +118,12 @@ USE_L10N = True
 
 USE_TZ = True
 
+AppfluxAppID = 'fVKhia5dwDbQZLu5iiGtTwGi'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
 HUEY = RedisHuey('my-app')
+# settings = {}
+BROKER_URL = 'redis://localhost:6379/0'
